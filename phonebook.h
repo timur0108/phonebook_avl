@@ -17,6 +17,10 @@ typedef struct {
   size_t height;
 } Record;
 
+typedef struct {
+  long root_offset;
+} PBHeader;
+
 bool pb_init(const char *pb_name);
 
 bool pb_add(const char *first_name, const char *second_name, const char *number,
